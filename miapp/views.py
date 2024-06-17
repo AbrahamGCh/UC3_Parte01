@@ -37,3 +37,9 @@ def rango2(request,a,b):
     resultado += "</ul"
     return HttpResponse(resultado)
 
+
+def examen(request):
+    mensaje = """ <h1> Nombre del Estudiante 01  : GARCIA </h1>
+    
+    <h1>  Git Hub:  https://github.com/AbrahamGCh/UC3_Parte01.git </h1> """
+    return HttpResponse(mensaje)
